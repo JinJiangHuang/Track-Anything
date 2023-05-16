@@ -21,7 +21,7 @@ try:
     from mmcv.cnn import ConvModule
 except:
     os.system("mim install mmcv")
-
+print("grVer:"+gr.__version__)
 # download checkpoints
 def download_checkpoint(url, folder, filename):
     os.makedirs(folder, exist_ok=True)
